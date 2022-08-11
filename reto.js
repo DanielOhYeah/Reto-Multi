@@ -1,8 +1,6 @@
 function Calcular (){
-    const tabla = document.getElementById("Valores")
-    .value.split(',')
-    .map(parseFloat);
-
+    const tabla = document.getElementById("Valores").value.split(',').map(parseFloat);
+    
     // Guardamos datos en el contador para estar seguros de que se guarde en una array XD
     const contador = [...tabla];
 
@@ -32,6 +30,6 @@ function multi(a) {
 }
 
 function Limpiar() {
-    const resultaos = document.getElementById('guardarResultados');
-    resultaos.innerHTML= ``;
+    document.getElementById('guardarResultados').innerHTML= ``;;
+    document.getElementById('Formulario').reset();s
 }
